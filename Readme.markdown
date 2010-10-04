@@ -2,6 +2,16 @@
 
 I wrote a very minimal WordPress theme for my family blog. This is it. [http://life.imathis.com](http://life.imathis.com)
 
+### First off, this doesn't have:
+
+- A sidebar
+- Navigation
+- Search
+- Widgets
+- And More!
+
+I'm not kidding about this minimal thing. For a family blog, I don't need any of that. If you do, fork, or move along.
+
 ### Could you please rant about how WordPress is doing it wrong?
 
 Certainly.
@@ -19,12 +29,3 @@ Updating custom WordPress themes is a pain which typically involves messing abou
 4. **Modernizer & HTML5 video support** - I'm using the HTML5 video element with h.264 and I'm not re-encoding my video for FireFox. Instead I'm using [Modernizer.js](http://modernizr.com) (included) to detect h.264 support and MooTools to swap out for a flash player using the same h.264 video.
 5. **Captioned images** - If images have a title attribute set, that's all you need. I've written some javascript (in site.js) that adds nicely styled captions. Also if you prefer, you can add captions as a `<q>` element after any image. The script will detect it and add it to the preceding image.
 6. **Font-face** - For that custom-web flavor, I'm using CSS3's @font-face support (with free fonts from [FontSquirrel](http://fontsquirrel.com/)). Checkout /stylesheets/partials/_typography.sass to change this.
-
-### What doesn't this have?
-
-- A sidebar
-- Navigation
-- Search
-- Widgets
-
-I ain't kidding about this minimal thing. For a simple family blog, I don't need any of that. If you do, fork, or move along.
