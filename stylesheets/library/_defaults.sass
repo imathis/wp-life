@@ -1,0 +1,29 @@
+@import compass
++global-reset
++reset-html5
+//@import library/nocss3
+
+
+//base classes
+.round-corners
+  +border-radius(6px)
+.round-right-corners
+  @extend .round-corners
+  @extend .clear-left-rounding
+.round-left-corners
+  @extend .round-corners
+  @extend .clear-right-rounding
+.round-top-corners
+  @extend .round-corners
+  @extend .clear-bottom-rounding
+.round-bottom-corners
+  @extend .round-corners
+  @extend .clear-top-rounding
+  
+.clear
+  +pie-clearfix
+
+.hover-underline
+  @extend .clear-underline
+  &:hover
+    text-decoration: underline

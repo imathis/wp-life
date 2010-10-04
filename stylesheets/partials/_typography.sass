@@ -1,0 +1,63 @@
+.sans-font
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif
+.serif-font
+  font-family: Georgia, Times, "Times New Roman", serif
+.fixed-font
+  font-family: "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", monospace
+
+/* If you'd prefer to use ChunkFive (also free) switch them out below, or use whatever you want */
+
++font-face("Megalopolis", font-files("megalopolisextra", woff, "megalopolisextra.ttf", truetype, "megalopolisextra.svg#webfontTi2cg57S", svg), 'megalopolisextra.eot')
+//+font-face("ChunkFive", font-files("Chunkfive-webfont", woff, "Chunkfive-webfont.ttf", truetype, "Chunkfive-webfont.svg#webfontb5K2fJwj", svg), 'Chunkfive-webfont.eot')
+
+.heading-font
+  font-family: 'Megalopolis', arial, serif
+  font-style: normal
+  font-weight: normal
+.h1-font
+  @extend .heading-font
+  
+  
+strong
+  font-weight: bold
+em
+  font-style: italic
+body
+  font-size: 16px
+  @extend .sans-font
+  line-height: 1.45em
+p
+  padding-bottom: 1em
+
+#{headings(2,6)}
+  @extend .heading-font
+  margin-bottom: .1em
+  line-height: 1.2em
+
+h6
+  font-size: 1.1em
+h5
+  font-size: 1.3em
+h4
+  font-size: 1.5em
+h3
+  font-size: 2em
+h2
+  font-size: 3em
+h1
+  font-size: 4.8em
+  margin-bottom: 0
+p, ul, ol
+  padding-bottom: 1.1em
+
+#sidebar
+  h3
+    font-size: 1.6em
+  h4
+    font-size: 1.3em
+
+#main
+  ul
+    list-style: inside disc
+  ol
+    list-style: inside decimal

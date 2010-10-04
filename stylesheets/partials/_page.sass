@@ -1,0 +1,123 @@
+#page
+  .post
+    padding: 2.5em 0
+    border-bottom: 1px solid $body-bg
+    &:first-child
+      padding-top: 0
+    &.single .article
+      padding-bottom: 2em
+      border-bottom: 1px dashed $body-bg
+    #{headings(2,6)}
+      color: #444
+    h2
+      a
+        color: #333
+      &:hover
+        color: $link-color
+        a
+          color: $link-color
+  #comment-section
+    border-top: 1px dashed #fff
+    padding-top: 2em
+  .pubdate
+    padding: .2em .8em
+    margin: .8em -.4em 1em
+    background: $body-bg
+    +border-radius(1.5em)
+    +box-shadow(darken($body-bg, 5), 1px, 1px, 1px)
+    .edit
+      float: right
+      color: desaturate(darken($body-bg, 30), 15)
+      text-decoration: none
+      &:hover
+        background: none
+        color: desaturate(darken($body-bg, 50), 15)
+  .more-link
+    background: lighten($body-bg, 2)
+    @extend .heading-font
+    +text-shadow(#fff)
+    line-height: 1.5em
+    padding: .5em 1em
+    display: inline-block
+    width: auto
+    margin: 1em 0
+    @extend .round-right-corners
+    border: 1px dashed darken($body-bg, 4)
+    border-left: 0
+    &:hover
+      background: darken($body-bg, 2)
+      border-color: darken($body-bg, 8)
+      text-decoration: none
+    &:after
+      content: '\FFEB'
+      font-size: 1.3em
+      padding-left: 5px
+  .pagination
+    @extend .clear
+    padding-top: 1em
+    @extend .heading-font
+    .next, .prev
+      a
+        color: #888
+        text-decoration: none
+        &:hover
+          color: $link-color
+    .next
+      display: inline-block
+      float: right
+      a:after
+        content: '\FFEB'
+        font-size: 1.5em
+        padding-left: 5px
+      
+    .prev
+      display: inline-block
+      float: left
+      a:before
+        content: '\FFE9'
+        font-size: 1.5em
+        padding-right: 5px
+  .post
+    img, video, .video object
+      max-width: $inner-width - 20px - 2px
+      display: block
+      background: #fff
+      padding: 10px
+      border: 1px solid #e5e5e5
+      margin: 0 auto
+      +box-shadow(#eee, 0, 2px, 5px)
+    video, .video, .video object
+      display: block 
+    .img-wrap + .img-wrap, img + img, video + video, .video + .video
+      margin-top: 1em
+    .img-wrap
+      display: block
+      background: #fff
+      padding: 10px
+      border: 1px solid #e5e5e5
+      margin: 0 auto
+      position: relative
+      +box-shadow(#eee, 0, 2px, 5px)
+      img
+        display: block
+        background: none
+        padding: 0
+        border: 0
+        margin: 0 auto
+        @extend .clear-box-shadow
+      .caption
+        color: #fff
+        display: block
+        background-color: #000
+        background: rgba(0,0,0,.4)
+        padding: .4em 5px
+        text-align: center
+        position: absolute
+        bottom: 10px
+        +text-shadow(rgba(0,0,0,.5))
+        &:before
+          content: "\201c"
+          padding-right: 2px
+        &:after
+          content: "\201d"
+          padding-left: 2px

@@ -1,0 +1,139 @@
+/*  Theme Name: wp-life */
+/*  Description: Simple minimal Theme for my family blog */
+/*  Author: Brandon Mathis */
+/*  Theme URI: http://github.com/imathis/wp-life */
+/*  Version: 1.0 */
+/*  Tags: compass, sass, font-face, simple */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td { margin: 0; padding: 0; border: 0; outline: 0; font-weight: inherit; font-style: inherit; font-size: 100%; font-family: inherit; vertical-align: baseline; }
+
+body { line-height: 1; color: black; background: white; }
+
+ol, ul { list-style: none; }
+
+table { border-collapse: separate; border-spacing: 0; vertical-align: middle; }
+
+caption, th, td { text-align: left; font-weight: normal; vertical-align: middle; }
+
+q, blockquote { quotes: "" ""; }
+q:before, q:after, blockquote:before, blockquote:after { content: ""; }
+
+a img { border: none; }
+
+article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary { display: block; }
+
+.round-corners, .round-right-corners, #page .more-link, .round-left-corners, .round-top-corners, .round-bottom-corners, #page { -moz-border-radius: 6px; -webkit-border-radius: 6px; -o-border-radius: 6px; -ms-border-radius: 6px; -khtml-border-radius: 6px; border-radius: 6px; }
+
+.clear, .page-width, #page, #header, #page .pagination { *zoom: 1; }
+.clear:after, .page-width:after, #page:after, #header:after, #page .pagination:after { content: "\0020"; display: block; height: 0; clear: both; overflow: hidden; visibility: hidden; }
+
+.hover-underline:hover { text-decoration: underline; }
+
+.sans-font, body { font-family: "Helvetica Neue", Arial, Helvetica, sans-serif; }
+
+.serif-font { font-family: Georgia, Times, "Times New Roman", serif; }
+
+.fixed-font { font-family: "Menlo", "Bitstream Vera Sans", Monaco, "Andale Mono", "Lucida Console", monospace; }
+
+/* If you'd prefer to use ChunkFive (also free) switch them out below, or use whatever you want */
+@font-face { font-family: "Megalopolis"; src: url('/wp-content/themes/wp-life/fonts/megalopolisextra.eot'); src: local("☺"), url('/wp-content/themes/wp-life/fonts/megalopolisextra') format('woff'), url('/wp-content/themes/wp-life/fonts/megalopolisextra.ttf') format('truetype'), url('/wp-content/themes/wp-life/fonts/megalopolisextra.svg#webfontTi2cg57S') format('svg'); }
+
+.heading-font, .h1-font, h1 a, h2, h3, h4, h5, h6, #page .more-link, #page .pagination { font-family: "Megalopolis", arial, serif; font-style: normal; font-weight: normal; }
+
+strong { font-weight: bold; }
+
+em { font-style: italic; }
+
+body { font-size: 16px; line-height: 1.45em; }
+
+p { padding-bottom: 1em; }
+
+h2, h3, h4, h5, h6 { margin-bottom: 0.1em; line-height: 1.2em; }
+
+h6 { font-size: 1.1em; }
+
+h5 { font-size: 1.3em; }
+
+h4 { font-size: 1.5em; }
+
+h3 { font-size: 2em; }
+
+h2 { font-size: 3em; }
+
+h1 { font-size: 4.8em; margin-bottom: 0; }
+
+p, ul, ol { padding-bottom: 1.1em; }
+
+#sidebar h3 { font-size: 1.6em; }
+#sidebar h4 { font-size: 1.3em; }
+
+#main ul { list-style: inside disc; }
+#main ol { list-style: inside decimal; }
+
+.page-width, #page, #header { width: 622px; margin: 0 auto; }
+
+#page { padding: 30px; }
+
+#header { width: 682px; margin: 0 auto; padding-top: 40px; }
+
+#footer { padding-top: 20px; text-align: center; padding: 30px 0; }
+
+html, body { background-color: #e9f2f7; color: #444444; }
+
+h1 { text-align: center; }
+h1 a { line-height: 0.8em; text-decoration: none; color: #333333; letter-spacing: -1px; padding-top: 0.11em; text-shadow: white 1px 1px 1px; }
+h1 + p { color: #666666; font-size: 1.3em; text-align: center; }
+
+#page { background: white; border: 1px solid #dae9f2; -moz-background-clip: padding; -webkit-background-clip: padding; -o-background-clip: padding-box; -ms-background-clip: padding-box; -khtml-background-clip: padding-box; background-clip: padding-box; -moz-box-shadow: #deebf3 0 2px 15px 0; -webkit-box-shadow: #deebf3 0 2px 15px 0; -o-box-shadow: #deebf3 0 2px 15px 0; box-shadow: #deebf3 0 2px 15px 0; }
+#page a { color: #3874a5; text-decoration: none; }
+#page a:hover { text-decoration: underline; }
+
+#footer { font-size: 0.9em; color: #b1c1c9; }
+#footer a { color: #98adb9; text-decoration: underline; }
+#footer a:hover { color: #7490a0; }
+
+#page .post { padding: 2.5em 0; border-bottom: 1px solid #e9f2f7; }
+#page .post:first-child { padding-top: 0; }
+#page .post.single .article { padding-bottom: 2em; border-bottom: 1px dashed #e9f2f7; }
+#page .post h2, #page .post h3, #page .post h4, #page .post h5, #page .post h6 { color: #444444; }
+#page .post h2 a { color: #333333; }
+#page .post h2:hover { color: #3874a5; }
+#page .post h2:hover a { color: #3874a5; }
+#page #comment-section { border-top: 1px dashed white; padding-top: 2em; }
+#page .pubdate { padding: 0.2em 0.8em; margin: 0.8em -0.4em 1em; background: #e9f2f7; -moz-border-radius: 1.5em; -webkit-border-radius: 1.5em; -o-border-radius: 1.5em; -ms-border-radius: 1.5em; -khtml-border-radius: 1.5em; border-radius: 1.5em; -moz-box-shadow: #d6e7f0 1px 1px 1px 0; -webkit-box-shadow: #d6e7f0 1px 1px 1px 0; -o-box-shadow: #d6e7f0 1px 1px 1px 0; box-shadow: #d6e7f0 1px 1px 1px 0; }
+#page .pubdate .edit { float: right; color: #87acc0; text-decoration: none; }
+#page .pubdate .edit:hover { background: none; color: #4d7b94; }
+#page .more-link { background: #f0f6fa; text-shadow: white 1px 1px 1px; line-height: 1.5em; padding: 0.5em 1em; display: inline-block; width: auto; margin: 1em 0; border: 1px dashed #dae9f2; border-left: 0; }
+#page .more-link:hover { background: #e2eef4; border-color: #cbe0ec; text-decoration: none; }
+#page .more-link:after { content: "\FFEB"; font-size: 1.3em; padding-left: 5px; }
+#page .pagination { padding-top: 1em; }
+#page .pagination .next a, #page .pagination .prev a { color: #888888; text-decoration: none; }
+#page .pagination .next a:hover, #page .pagination .prev a:hover { color: #3874a5; }
+#page .pagination .next { display: inline-block; float: right; }
+#page .pagination .next a:after { content: "\FFEB"; font-size: 1.5em; padding-left: 5px; }
+#page .pagination .prev { display: inline-block; float: left; }
+#page .pagination .prev a:before { content: "\FFE9"; font-size: 1.5em; padding-right: 5px; }
+#page .post img, #page .post video, #page .post .video object { max-width: 600px; display: block; background: white; padding: 10px; border: 1px solid #e5e5e5; margin: 0 auto; -moz-box-shadow: #eeeeee 0 2px 5px 0; -webkit-box-shadow: #eeeeee 0 2px 5px 0; -o-box-shadow: #eeeeee 0 2px 5px 0; box-shadow: #eeeeee 0 2px 5px 0; }
+#page .post video, #page .post .video, #page .post .video object { display: block; }
+#page .post .img-wrap + .img-wrap, #page .post img + img, #page .post video + video, #page .post .video + .video { margin-top: 1em; }
+#page .post .img-wrap { display: block; background: white; padding: 10px; border: 1px solid #e5e5e5; margin: 0 auto; position: relative; -moz-box-shadow: #eeeeee 0 2px 5px 0; -webkit-box-shadow: #eeeeee 0 2px 5px 0; -o-box-shadow: #eeeeee 0 2px 5px 0; box-shadow: #eeeeee 0 2px 5px 0; }
+#page .post .img-wrap img { display: block; background: none; padding: 0; border: 0; margin: 0 auto; }
+#page .post .img-wrap .caption { color: white; display: block; background-color: black; background: rgba(0, 0, 0, 0.4); padding: 0.4em 5px; text-align: center; position: absolute; bottom: 10px; text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px; }
+#page .post .img-wrap .caption:before { content: "\201c"; padding-right: 2px; }
+#page .post .img-wrap .caption:after { content: "\201d"; padding-left: 2px; }
+
+.clear-text-shadow { text-shadow: none; }
+
+.clear-box-shadow, #page .post .img-wrap img { -moz-box-shadow: none; -webkit-box-shadow: none; -o-box-shadow: none; box-shadow: none; }
+
+.clear-link:hover { background: none; }
+
+.clear-underline, .hover-underline { text-decoration: none; }
+
+/* Clear border radius */
+.clear-top-left-rounding, .clear-top-rounding, .round-bottom-corners, .clear-left-rounding, .round-right-corners, #page .more-link { -moz-border-radius-topleft: 0; -webkit-border-top-left-radius: 0; -o-border-top-left-radius: 0; -ms-border-top-left-radius: 0; -khtml-border-top-left-radius: 0; border-top-left-radius: 0; }
+
+.clear-top-right-rounding, .clear-top-rounding, .round-bottom-corners, .clear-right-rounding, .round-left-corners { -moz-border-radius-topright: 0; -webkit-border-top-right-radius: 0; -o-border-top-right-radius: 0; -ms-border-top-right-radius: 0; -khtml-border-top-right-radius: 0; border-top-right-radius: 0; }
+
+.clear-bottom-right-rounding, .clear-bottom-rounding, .round-top-corners, .clear-right-rounding, .round-left-corners { -moz-border-radius-bottomright: 0; -webkit-border-bottom-right-radius: 0; -o-border-bottom-right-radius: 0; -ms-border-bottom-right-radius: 0; -khtml-border-bottom-right-radius: 0; border-bottom-right-radius: 0; }
+
+.clear-bottom-left-rounding, .clear-bottom-rounding, .round-top-corners, .clear-left-rounding, .round-right-corners, #page .more-link { -moz-border-radius-bottomleft: 0; -webkit-border-bottom-left-radius: 0; -o-border-bottom-left-radius: 0; -ms-border-bottom-left-radius: 0; -khtml-border-bottom-left-radius: 0; border-bottom-left-radius: 0; }

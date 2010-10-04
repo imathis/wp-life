@@ -1,0 +1,31 @@
+.clear-text-shadow
+  +text-shadow(none)
+.clear-box-shadow
+  +box-shadow(none)
+.clear-link
+  &:hover
+    background: none
+.clear-underline
+  text-decoration: none
+
+/* Clear border radius
+.clear-top-left-rounding
+  +border-top-left-radius(0)
+.clear-top-right-rounding
+  +border-top-right-radius(0)
+.clear-bottom-right-rounding
+  +border-bottom-right-radius(0)
+.clear-bottom-left-rounding
+  +border-bottom-left-radius(0)
+.clear-top-rounding
+  @extend .clear-top-left-rounding
+  @extend .clear-top-right-rounding
+.clear-bottom-rounding
+  @extend .clear-bottom-left-rounding
+  @extend .clear-bottom-right-rounding
+.clear-right-rounding
+  @extend .clear-top-right-rounding
+  @extend .clear-bottom-right-rounding
+.clear-left-rounding
+  @extend .clear-top-left-rounding
+  @extend .clear-bottom-left-rounding
