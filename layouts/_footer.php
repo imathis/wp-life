@@ -1,4 +1,4 @@
 <div id="footer">
-  &copy; 2009 Becca & Brandon Mathis - Powered by <a href="http://wordpress.org/">WordPress</a>.
+  Powered by <a href="http://wordpress.org/">WordPress</a> - Themed by <a href="http://github.com/imathis/wp-life/">wp-life</a>.
 </div>
 <? wp_footer(); ?>
