@@ -5,6 +5,6 @@
   if (is_page()){
     render('/layouts/page');
   } else {
-    render('/layouts/posts');
+    render('/layouts/default');
   }
 ?>
