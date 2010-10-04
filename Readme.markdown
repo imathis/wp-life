@@ -16,8 +16,10 @@ I'm not kidding about this minimal thing. For a family blog, I don't need any of
 
 Certainly.
 
-I strongly dislike (to put it mildly) how nearly all WordPress themes are written. There is almost no concept of reuse built in, and WordPress uses annoying functions like get_header(); to basically import header.php.
-There are many files where HTML tags are opened but not closed. The tag usually closed in some other file (which is liked through a magical WordPress function). This makes editing a real pain since you can use text editor folding, and you have to keep track
+I strongly dislike (to put it mildly) how nearly all WordPress themes are written. There is almost no concept of reuse built in, and WordPress uses annoying functions like get_header(); to basically import header.php. Changing your HTML layout usually means
+making the same edits across many different files. It just plain sucks. You already know this because you learned to write WordPress themes by modifying existing themes.
+
+There are many files where HTML tags (like `<div id="wrapper">`) are never closed except in other files, which are liked through a magical WordPress function. This makes editing a real pain since you can use text editor folding, and you have to keep track
 of closed divs across multiple files. This leads to lots of inline HTML comments like "<\!-- closing #wrapper-7-big-blue-crappy-theme -->" scattered across the theme.
 Updating custom WordPress themes is a pain which typically involves messing about with replacing files over ftp.
 
