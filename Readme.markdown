@@ -20,3 +20,11 @@ Updating custom WordPress themes is a pain which typically involves messing abou
 5. **Captioned images** - If images have a title attribute set, that's all you need. I've written some javascript (in site.js) that adds nicely styled captions. Also if you prefer, you can add captions as a `<q>` element after any image. The script will detect it and add it to the preceding image.
 6. **Font-face** - For that custom-web flavor, I'm using CSS3's @font-face support (with free fonts from [FontSquirrel](http://fontsquirrel.com/)). Checkout /stylesheets/partials/_typography.sass to change this.
 
+### What doesn't this have?
+
+- A sidebar
+- Navigation
+- Search
+- Widgets
+
+I ain't kidding about this minimal thing. For a simple family blog, I don't need any of that. If you do, fork, or move along.
