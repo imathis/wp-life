@@ -1,8 +1,8 @@
-## What is wp-life?
+# What is wp-life?
 
 I wrote a very minimal WordPress theme for my family blog. This is it. [http://life.imathis.com](http://life.imathis.com)
 
-### First off, this doesn't have:
+## First off, this doesn't have:
 
 - A sidebar
 - Navigation
@@ -12,7 +12,7 @@ I wrote a very minimal WordPress theme for my family blog. This is it. [http://l
 
 I'm not kidding about this minimal thing. For a family blog, I don't need any of that. If you do, fork, or move along.
 
-### Could you please rant about how WordPress is doing it wrong?
+## Please rant about how WordPress is doing it wrong.
 
 Certainly.
 
@@ -21,7 +21,7 @@ There are many files where HTML tags are opened but not closed. The tag usually 
 of closed divs across multiple files. This leads to lots of inline HTML comments like "<\!-- closing #wrapper-7-big-blue-crappy-theme -->" scattered across the theme.
 Updating custom WordPress themes is a pain which typically involves messing about with replacing files over ftp.
 
-### Okay, so what are you doing about it?
+## Okay, so what are you doing about it?
 
 1. **Layouts & Partials** - WordPress conditions call a simple render function using server site imports to create sensible layouts and partials. This maximizes reuse and allows for sensible HTML.
 2. **Rsync Deployment** - Update the Rakefile with your ssh user & theme path eg. "user@host.com" "~/document_root/wp-content/themes/wp-life". Then run `rake push` from the terminal to update your theme instantly.
