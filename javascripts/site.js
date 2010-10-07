@@ -26,8 +26,20 @@ function html5toFlash(){
         container: span
       });
       video.dispose();
+    } else if(video.get('preload') == "none"){
+      video.addEvent('click', function(event){
+        clickToLoad(video);
+      });
     }
   })
+}
+
+function clickToLoad(video){
+  video.set('preload', true);
+  if(!video.get('autoplay')){
+    video.set('autoplay', true);
+  }
+  video.removeEvent('click', clickToLoad);
 }
 
 function captionizer(){
