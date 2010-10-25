@@ -67,7 +67,8 @@ p, ul, ol { padding-bottom: 1.1em; }
 #sidebar h4 { font-size: 1.3em; }
 
 #main ul { list-style: inside disc; }
-#main ol { list-style: inside decimal; }
+
+ol { list-style: inside decimal; }
 
 .page-width, #page, #header { width: 622px; margin: 0 auto; }
 
