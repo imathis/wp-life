@@ -14,7 +14,7 @@
     var flashplayerskin = "<? bloginfo('template_url')?>/jwplayer/glow/glow.xml";
   </script>
   <script src="http://ajax.googleapis.com/ajax/libs/mootools/1.2.4/mootools-yui-compressed.js" type="text/javascript"></script>
-  <script src="<? bloginfo('template_url')?>/javascripts/modernizr-1.5.min.js" type="text/javascript"></script>
+  <script src="<? bloginfo('template_url')?>/javascripts/modernizr-1.6.min.js" type="text/javascript"></script>
   <script src="<? bloginfo('template_url')?>/javascripts/site.js" type="text/javascript"></script>
   
   <?php wp_head(); ?>
