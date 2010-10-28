@@ -3,5 +3,5 @@ remote_root   = "~/document_root/" # for rsync deployment
 
 desc "push"
 task :push do
-  system("rsync -avz --delete . #{ssh_user}:#{remote_root}")
+  system("rsync -avz --exclude-from=.rsync-exclude --delete . #{ssh_user}:#{remote_root}")
 end

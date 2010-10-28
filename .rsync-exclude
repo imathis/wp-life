@@ -1,0 +1,8 @@
+.bundle/
+.sass-cache/
+.git*
+.rvmrc
+.rsync-exclude
+.DS_Store
+Gemfile*
+Rakefile
